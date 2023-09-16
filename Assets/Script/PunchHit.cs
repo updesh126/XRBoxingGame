@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PunchHit : MonoBehaviour
@@ -7,31 +8,34 @@ public class PunchHit : MonoBehaviour
     [SerializeField]
     private ScoreSystem scoreSystem;
 
-    [SerializeField] private GameObject SpawnerSystem;
+    [SerializeField]
+    AudioSource Audio;
 
-    [SerializeField] bool H_Left, H_Right;
+    /// <summary>
+    /// [SerializeField] private GameObject SpawnerSystem;
+    /// </summary>
+
+    //[SerializeField] bool H_Left=false, H_Right=false;
+
+    private void Update()
+    {
+        
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if(H_Left == true && H_Right == false && other.gameObject.tag == "red")
+        Debug.Log("Collider");
+        if (other.gameObject.tag == "red")
         {
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
-            Debug.Log("Hit by left hand");
+            Audio.Play();
         }
-        if (H_Left == false && H_Right == true && other.gameObject.tag == "blue")
+        if (other.gameObject.tag == "blue")
         {
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
-            Debug.Log("Hit by Right hand");
-        }
-        else
-        {
-            scoreSystem.RemoveScore();
-
-            SpawnerSystem.SetActive(false);
-            Debug.Log("Wrong Hit");
-
-            //other.gameObject.SetActive(false);
+            Audio.Play();
         }
     }
+
 }
