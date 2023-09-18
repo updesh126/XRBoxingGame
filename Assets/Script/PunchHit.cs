@@ -8,6 +8,8 @@ public class PunchHit : MonoBehaviour
     [SerializeField]
     private ScoreSystem scoreSystem;
 
+    [SerializeField] private bool R_Hand=false,L_hand = false;
+
     [SerializeField]
     AudioSource Audio;
 
@@ -24,13 +26,13 @@ public class PunchHit : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collider");
-        if (other.gameObject.tag == "red")
+        if ( R_Hand==true && other.gameObject.tag == "red")
         {
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
             Audio.Play();
         }
-        if (other.gameObject.tag == "blue")
+        if (L_hand== true && other.gameObject.tag == "blue")
         {
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
