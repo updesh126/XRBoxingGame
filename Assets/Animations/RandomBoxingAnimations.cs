@@ -28,7 +28,7 @@ public class RandomBoxingAnimations : MonoBehaviour
             string randomTrigger = GetRandomBoxingTrigger();
 
             // Trigger the selected animation.
-            animator.Play(randomTrigger);
+            animator.CrossFade(randomTrigger,2f);
         }
     }
 
