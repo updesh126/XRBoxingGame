@@ -8,6 +8,8 @@ TagManager:
   - red
   - Left
   - Right
+  - bot
+  - Start
   layers:
   - Default
   - TransparentFX

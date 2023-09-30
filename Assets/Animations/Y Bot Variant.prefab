@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8b39a48a7a52cd64c8568ff66144344f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b39a48a7a52cd64c8568ff66144344f,
         type: 3}
@@ -63,10 +63,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3090848061168836670, guid: 8b39a48a7a52cd64c8568ff66144344f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bot
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8b39a48a7a52cd64c8568ff66144344f,
         type: 3}
       propertyPath: m_Name
       value: Y Bot Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8b39a48a7a52cd64c8568ff66144344f,
+        type: 3}
+      propertyPath: m_TagString
+      value: bot
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 8b39a48a7a52cd64c8568ff66144344f,
         type: 3}
