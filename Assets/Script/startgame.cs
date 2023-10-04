@@ -6,6 +6,8 @@ public class startgame : MonoBehaviour
 {
     [SerializeField]
     Animator Bot;
+    [SerializeField]
+    AudioSource StartGame;
 
     [SerializeField] private bool Right_H = false, Left_H = false;
     private void OnTriggerEnter(Collider other)
@@ -30,6 +32,7 @@ public class startgame : MonoBehaviour
         {
             Debug.Log("Final done");
             Bot.enabled = true;
+            StartGame.Play();
         }
 
     }
