@@ -1776,6 +1776,7 @@ GameObject:
   - component: {fileID: 1638655329}
   - component: {fileID: 1638655334}
   - component: {fileID: 1638655333}
+  - component: {fileID: 1638655335}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Start
@@ -1798,7 +1799,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1997,6 +1998,21 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1638655335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638655327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33e659a575be7f542b7e378f222f1266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bot: {fileID: 1178862136}
+  Right_H: 0
+  Left_H: 0
 --- !u!1001 &1778682688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2627,7 +2643,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -3620,7 +3636,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
@@ -6038,10 +6054,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5302739756638280726}
   - component: {fileID: 323195715912639872}
-  - component: {fileID: 5302739756638280727}
   m_Layer: 0
   m_Name: right Variant
-  m_TagString: Player
+  m_TagString: Right
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6362,19 +6377,6 @@ Transform:
   m_Father: {fileID: 712393726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 76.161, z: 84.858}
---- !u!114 &5302739756638280727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4817951213745358508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33e659a575be7f542b7e378f222f1266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bot: {fileID: 1178862136}
 --- !u!23 &5304443863483181748
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6889,27 +6891,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4966870817847897431}
   - component: {fileID: 1624756843787527629}
-  - component: {fileID: 5739290296834045934}
   m_Layer: 0
   m_Name: Left Variant
-  m_TagString: Player
+  m_TagString: Left
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5739290296834045934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5739290296834045933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33e659a575be7f542b7e378f222f1266, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Bot: {fileID: 1178862136}
 --- !u!4 &5787218265735966074
 Transform:
   m_ObjectHideFlags: 0
