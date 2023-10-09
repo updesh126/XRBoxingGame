@@ -28,16 +28,23 @@ public class PunchHit : MonoBehaviour
         Debug.Log("Collider");
         if ( R_Hand==true && other.gameObject.tag == "red")
         {
+            other.gameObject.GetComponent<ParticalHit>().PLayHit();
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
             Audio.Play();
         }
         if (L_hand== true && other.gameObject.tag == "blue")
         {
+            other.gameObject.GetComponent<ParticalHit>().PLayHit();
             other.gameObject.SetActive(false);
             scoreSystem.AddScore();
             Audio.Play();
         }
+        if( other.gameObject.tag == "Partical")
+        {
+            other.gameObject.GetComponent<ParticleSystem>().Play();
+        }
+        
     }
 
 }
