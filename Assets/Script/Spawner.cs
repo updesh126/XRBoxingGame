@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
     {
         if (timer > beat)
         {
-           GameObject Lcube = Instantiate(cubes[0], Lpoints[Random.Range(0, 4)]);
+            GameObject Lcube = Instantiate(cubes[0], Lpoints[Random.Range(0, 4)]);
             GameObject Rcube = Instantiate(cubes[1], Rpoints[Random.Range(0, 4)]);
             Lcube.transform.localPosition = Vector3.zero;
             Rcube.transform.localPosition = Vector3.zero;

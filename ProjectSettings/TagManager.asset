@@ -10,6 +10,7 @@ TagManager:
   - Right
   - bot
   - Start
+  - Partical
   layers:
   - Default
   - TransparentFX
