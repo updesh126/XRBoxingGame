@@ -11,6 +11,7 @@ TagManager:
   - bot
   - Start
   - Partical
+  - end
   layers:
   - Default
   - TransparentFX
