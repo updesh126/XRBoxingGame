@@ -49,6 +49,7 @@ public class Spawner : MonoBehaviour
             if(count == 10)
             {
                 Lcube = Instantiate(cubes[2], LC_Point);
+                count = 0;
             }
             
             
