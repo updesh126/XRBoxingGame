@@ -12,6 +12,7 @@ TagManager:
   - Start
   - Partical
   - end
+  - Bow
   layers:
   - Default
   - TransparentFX
