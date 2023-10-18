@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class cubePunch : MonoBehaviour
 {
-    
+    [SerializeField]
+    public static float speed = 1.0f;
     
     void Start()
     {
@@ -12,8 +14,12 @@ public class cubePunch : MonoBehaviour
     }
     void Update()
     {
-        transform.position -= Time.deltaTime * transform.forward * 2;
+        transform.position -= Time.deltaTime * transform.forward * 2 *speed;
     }
     
-    
+    public void speedrate(float rate)
+    {
+        speed += rate;
+        Debug.Log("Speed increase:" +speed);
+    }
 }

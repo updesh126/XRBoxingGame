@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-   
+    cubePunch cube= new cubePunch();
     public GameObject[] cubes;
     public Transform[] Lpoints;
     public Transform[] Rpoints;
-
+    public float speedrate = 0.25f;
     public Transform LC_Point;
     //public Transform RC_Point;
     public float beat= (60/130)*2;
@@ -50,6 +50,7 @@ public class Spawner : MonoBehaviour
             {
                 Lcube = Instantiate(cubes[2], LC_Point);
                 count = 0;
+                cube.speedrate(speedrate);
             }
             
             
