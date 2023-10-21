@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class PunchHit : MonoBehaviour
 {
+    [Range(0,1)]
+    public float intensity;
+    public float duration;
+
     [SerializeField]
     private ScoreSystem scoreSystem;
 
@@ -45,6 +50,12 @@ public class PunchHit : MonoBehaviour
             other.gameObject.GetComponent<ParticleSystem>().Play();
         }
         
+    }
+
+    public void TriggerHaptic( XRBaseController controller)
+    {
+        if (intensity > 0)
+            controller.SendHapticImpulse(intensity, duration);
     }
 
 }

@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     public float speedrate = 0.25f;
     public Transform LC_Point;
     //public Transform RC_Point;
-    public float beat= (60/130)*2;
+    public float beat= (20/130)*2;
     private float timer;
     int count = 0;
     // Start is called before the first frame update
@@ -60,6 +60,6 @@ public class Spawner : MonoBehaviour
 
         }
         timer += Time.deltaTime;
-       // Debug.Log(timer.ToString());
+        Debug.Log(timer.ToString());
     }
 }

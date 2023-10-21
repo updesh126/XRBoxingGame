@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
     [SerializeField]
     GameObject GameOverMenu;
 
+    cubePunch cube = new cubePunch();
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,5 +23,6 @@ public class GameOver : MonoBehaviour
     public void ResetGame(string Name)
     {
         SceneManager.LoadScene(Name);
+        cube.speedrate(1.0f);
     }
 }

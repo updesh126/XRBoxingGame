@@ -14,7 +14,7 @@ public class cubePunch : MonoBehaviour
     }
     void Update()
     {
-        transform.position -= Time.deltaTime * transform.forward * 2 *speed;
+        transform.position -= Time.deltaTime * transform.forward * 3 *speed;
     }
     
     public void speedrate(float rate)
