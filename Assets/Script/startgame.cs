@@ -5,6 +5,10 @@ using UnityEngine;
 public class startgame : MonoBehaviour
 {
     [SerializeField]
+    GameObject PanelHide;
+    [SerializeField] GameObject PanelShow;
+
+    [SerializeField]
     Animator Bot;
     [SerializeField]
     AudioSource StartGame;
@@ -13,11 +17,7 @@ public class startgame : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("YES");
-        /*if (other.gameObject.tag == "Start")
-        {
-            Debug.Log("heelo");
-            Bot.enabled = true;
-        }*/
+        
         if (other.gameObject.tag == "Right")
         {
             Debug.Log("Right done");
@@ -33,6 +33,8 @@ public class startgame : MonoBehaviour
             Debug.Log("Final done");
             Bot.enabled = true;
             StartGame.Play();
+            PanelHide.SetActive(false);
+            PanelShow.SetActive(true);
         }
 
     }

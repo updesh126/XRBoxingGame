@@ -7,6 +7,9 @@ public class LevelSecStart : MonoBehaviour
     [SerializeField]
     private GameObject SpwanSystem;
 
+    [SerializeField] GameObject PanelHide;
+    [SerializeField] GameObject PanelShow;
+
     [SerializeField]
     AudioSource StartGame;
 
@@ -34,6 +37,8 @@ public class LevelSecStart : MonoBehaviour
             Debug.Log("Final done");
             SpwanSystem.SetActive(true);
             StartGame.Play();
+            PanelHide.SetActive(false); 
+            PanelShow.SetActive(true);
         }
 
     }

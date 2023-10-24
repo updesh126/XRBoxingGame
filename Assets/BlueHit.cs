@@ -14,7 +14,7 @@ public class BlueHit : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("hhiiiiiiii");
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Right" || other.gameObject.tag == "Left")
         {
             Debug.Log("hit by Player");
             HitAudio.Play();
