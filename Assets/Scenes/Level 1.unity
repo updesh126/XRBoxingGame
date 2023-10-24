@@ -957,8 +957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpwanSystem: {fileID: 279436787}
-  PanelHide: {fileID: 0}
-  PanelShow: {fileID: 0}
+  PanelHide: {fileID: 1886173020}
+  PanelShow: {fileID: 57954878189388651}
   StartGame: {fileID: 2022455530}
   Right_H: 0
   Left_H: 0
