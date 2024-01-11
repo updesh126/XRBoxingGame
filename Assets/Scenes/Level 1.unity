@@ -1443,7 +1443,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &694725834 stripped
 Transform:
@@ -1846,7 +1846,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1058807143
 GameObject:
@@ -2931,7 +2931,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1517054989
 GameObject:
@@ -3344,7 +3344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1661599784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,7 +3378,7 @@ Transform:
   - {fileID: 2135687759}
   - {fileID: 345434529}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1663440996
 GameObject:
@@ -3944,6 +3944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: XR Device Simulator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5847,7 +5852,7 @@ PrefabInstance:
     - target: {fileID: 7382658383558689159, guid: a22573e1ecb298c4781ba65e1b7dcafe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7382658383558689159, guid: a22573e1ecb298c4781ba65e1b7dcafe,
         type: 3}
@@ -6851,7 +6856,7 @@ MonoBehaviour:
   scoreSystem: {fileID: 0}
   R_Hand: 0
   L_hand: 1
-  Audio: {fileID: 0}
+  Audio: {fileID: 5114911461620585610}
 --- !u!1 &4157977832038176080
 GameObject:
   m_ObjectHideFlags: 0
@@ -7920,7 +7925,7 @@ PrefabInstance:
     - target: {fileID: 1014854186989774515, guid: 370d12645e7e6db46a664afed22f387b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1014854186989774515, guid: 370d12645e7e6db46a664afed22f387b,
         type: 3}
@@ -8164,7 +8169,7 @@ MonoBehaviour:
   scoreSystem: {fileID: 0}
   R_Hand: 1
   L_hand: 0
-  Audio: {fileID: 0}
+  Audio: {fileID: 5114911461620585610}
 --- !u!1001 &6435423174876877162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8372,12 +8377,12 @@ GameObject:
   - component: {fileID: 7441613651714055641}
   - component: {fileID: 153958565828296263}
   m_Layer: 0
-  m_Name: XR Origin (1)
+  m_Name: XR Origin Sim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &7243512721365902314
 GameObject:
   m_ObjectHideFlags: 0
