@@ -13,6 +13,9 @@ public class startgame : MonoBehaviour
     [SerializeField]
     AudioSource StartGame;
 
+    [SerializeField]
+    EnemyController EnemyController;
+
     [SerializeField] private bool Right_H = false, Left_H = false;
     private void OnTriggerEnter(Collider other)
     {
@@ -32,6 +35,7 @@ public class startgame : MonoBehaviour
         {
             Debug.Log("Final done");
             Bot.enabled = true;
+            EnemyController.enabled = true;
             StartGame.Play();
             PanelHide.SetActive(false);
             PanelShow.SetActive(true);

@@ -9,9 +9,12 @@ public class EnemyController : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+    RandomBoxingAnimations animations;
 
     private void Start()
     {
+        animations = GetComponent<RandomBoxingAnimations>();
+        //animator = GetComponent<Animator>();
         target = PlayerManager.instance.Player.transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -23,14 +26,20 @@ public class EnemyController : MonoBehaviour
         if (distance <= lookRadius)
         {
             agent.SetDestination(target.position);
+            //animator.SetBool("isWalk", true);
+            animations.Iswalking(true);
 
-            if(distance <= agent.stoppingDistance)
+
+            if (distance <= agent.stoppingDistance)
             {
                 //Attack the target
+                //animator.SetBool("Walk", false);
+                
 
                 FaceTarget();
             }
         }
+        animations.Iswalking(false);
     }
 
     void FaceTarget()
