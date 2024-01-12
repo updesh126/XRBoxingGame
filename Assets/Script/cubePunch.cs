@@ -22,4 +22,8 @@ public class cubePunch : MonoBehaviour
         speed += rate;
         Debug.Log("Speed increase:" +speed);
     }
+    public void speedReset()
+    {
+        speed = 1.0f;
+    }
 }

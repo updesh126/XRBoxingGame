@@ -23,6 +23,6 @@ public class GameOver : MonoBehaviour
     public void ResetGame(string Name)
     {
         SceneManager.LoadScene(Name);
-        cube.speedrate(1.0f);
+        cube.speedReset();
     }
 }
